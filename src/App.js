@@ -1,6 +1,8 @@
 import './App.css';
 import SearchBar from './components/SearchBar';
 import Car from './components/Car';
+import Cars from './components/Cars';
+
 import "./App.css"
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
        <SearchBar></SearchBar>
        </div>
        <div>
-       <Car></Car>
+       <Cars></Cars>
        </div>
     </div>
   );
