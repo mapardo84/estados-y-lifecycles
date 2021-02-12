@@ -8,7 +8,6 @@ export default class SearchBar extends React.Component{
     this.state = {input:""}
 
     if (this.send === undefined) this.send = () => alert("La funcion send no esta definida")
-    console.log("fe")
   }
   saveInputValue(value){
     this.setState({input:value})
@@ -26,7 +25,7 @@ export default class SearchBar extends React.Component{
           onChange={(e)=>this.saveInputValue(e.target.value)}/>
         </div>
         <div className={styles.btnBuscar}>
-          <button className={styles.btn} onClick={()=>this.send((this.state.input))}>Buscar</button>
+          <button className={styles.btn} onClick={()=>this.send((this.state.input),"500")}>Buscar</button>
         </div>
       </div>
       )

@@ -5,7 +5,7 @@ import styles from './Cars.module.css';
 export default class Cars extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {cars: [{price:"50000", title:"BMW"},{price:"10000",title:"AMAROK"}]};
+        this.state = {cars: props.ads};
       }
     render() {
       return (
