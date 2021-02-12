@@ -4,6 +4,8 @@ import Cars from './components/Cars';
 import React, { useState } from 'react';
 import "./App.css"
 
+//Componente origen, se maneja el estado de los anuncios existentes, desde aqui se renderiza la barra de busqueda
+//y el contenedor de los anuncios
 function App() {
   const [ads, setAd] = useState(getAnuncios());
 

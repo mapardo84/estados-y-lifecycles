@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import styles from './SearchBar.module.css';
 
-
+//Este componente se encargara de mostrar la searchbar y cuando se de click en el boton
+//subir los datos a un backend hipotetico y actualizar estados (eso lo hace app.js)
 export default function SearchBar(props){
   //Hook para guardar el stado del input
   const [inputValue, setInputValue] = useState("")
