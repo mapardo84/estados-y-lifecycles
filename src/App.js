@@ -8,8 +8,7 @@ function App() {
   const [ads, setAd] = useState(getAnuncios());
 
   function send(titulo, valor){
-    setAd(ads.push({price:valor, title:titulo}))
-    console.log(ads)
+    setAd(antiguo => [...antiguo, {price:valor, title:titulo}])
     //Aqui deberia ir el llamado al backend
   }
   function getAnuncios(){
